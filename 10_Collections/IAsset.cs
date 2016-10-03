@@ -2,6 +2,8 @@
 {
     internal interface IAsset
     {
+        double GetValue();
+        string GetName();
 
     }
 }
