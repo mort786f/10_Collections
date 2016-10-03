@@ -38,15 +38,15 @@ namespace _10_Collections
             Assert.IsTrue(id2 != id1);
         }
 
-        //[TestMethod]
-        //public void CanSaveAndLoad()
-        //{
-        //    IStockRepository repository = new MemoryStockRepository();
-        //    repository.SaveStock(yhoo);
-        //    long id = yhoo.Id;
-        //    Stock loaded = repository.LoadStock(id);
-        //    Assert.AreEqual(yhoo, loaded);
-        //}
+        [TestMethod]
+        public void CanSaveAndLoad()
+        {
+            IStockRepository repository = new MemoryStockRepository();
+            repository.SaveStock(yhoo);
+            long id = yhoo.Id;
+            Stock loaded = repository.LoadStock(id);
+            Assert.AreEqual(yhoo, loaded);
+        }
 
         //[TestMethod]
         //public void CanSaveAfterChangeWithoutError()
